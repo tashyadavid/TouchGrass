@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>TouchGrass Ivy Chatbot</title>
+    <title>TouchGrass Chatbot</title>
     <script src="https://cdn.voiceflow.com/webchat/embed.js"></script>
     <style>
       body {
@@ -15,12 +15,14 @@
     <div id="vf-chat"></div>
 
     <script>
-      window.voiceflow.chat.load({
-        verify: { projectID: "68300af253e18e5eb719fb4f" },
-        url: "https://general.voiceflow.com",
-        versionID: "68300af253e18e5eb719fb50",
-        allowDangerousHTML: true,
-      });
+      window.onload = () => {
+        window.voiceflow.chat.load({
+          verify: { projectID: "68300af253e18e5eb719fb4f" },
+          versionID: "68300af253e18e5eb719fb50",
+          url: "https://general.voiceflow.com",
+          allowDangerousHTML: true
+        });
+      };
     </script>
   </body>
 </html>
