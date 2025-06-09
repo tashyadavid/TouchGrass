@@ -1,9 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>TouchGrass Chatbot</title>
-    <script src="https://cdn.voiceflow.com/webchat/embed.js"></script>
     <style>
       body {
         margin: 0;
@@ -14,15 +13,21 @@
   <body>
     <div id="vf-chat"></div>
 
-    <script>
-      window.onload = () => {
-        window.voiceflow.chat.load({
-          verify: { projectID: "68300af253e18e5eb719fb4f" },
-          versionID: "68300af253e18e5eb719fb50",
-          url: "https://general.voiceflow.com",
-          allowDangerousHTML: true
-        });
-      };
+    <script type="text/javascript">
+      (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '68300af253e18e5eb719fb4f' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            allowDangerousHTML: true
+          });
+        };
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
+        v.type = "text/javascript";
+        s.parentNode.insertBefore(v, s);
+      })(document, 'script');
     </script>
   </body>
 </html>
