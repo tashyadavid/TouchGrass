@@ -4,23 +4,24 @@
 <title>Page Title</title>
 </head>
 <body>
+
 <script type="text/javascript">
   (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '684903a58dd1509604da5066' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production',
-          voice: {
-            url: "https://runtime-api.voiceflow.com"
-          }, 
-          allowDangerousHTML: true
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    v.onload = function() {
+      window.voiceflow.chat.load({
+        verify: { projectID: '68300af253e18e5eb719fb4f' },
+        url: 'https://general-runtime.voiceflow.com',
+        versionID: 'production',
+        allowDangerousHTML: true
+      });
+    };
+    v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+    v.type = "text/javascript";
+    s.parentNode.insertBefore(v, s);
   })(document, 'script');
 </script>
+
 
 <h1>This is a Heading</h1>
 <p>This is a paragraph.</p>
